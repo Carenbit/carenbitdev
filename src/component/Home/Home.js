@@ -1,17 +1,11 @@
 import React from "react";
+import frameHome from "../../assets/frameHome.png";
 
 const Home = () => {
   return (
-    <div
-      id="homePage"
-      style={{
-        backgroundImage: "url('path/to/background-image.jpg')",
-        backgroundPosition: "top right",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div id="homePage">
       <p>Left side content</p>
-      <img src="path/to/image.jpg" alt="Right side content" />
+      <img src={frameHome} alt="..." />
     </div>
   );
 };
