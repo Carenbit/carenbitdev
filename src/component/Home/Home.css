@@ -1,0 +1,24 @@
+#homePage {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 0px;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.plmImage {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+.mainHeading {
+  position: relative;
+}
+
+.mainHeading small {
+  position: absolute;
+  bottom: 0;
+}
