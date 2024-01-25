@@ -8,62 +8,62 @@ export default function Navbar () {
         <nav
           className="navbar navbar-expand-lg" >
           <a className="navbar-brand" href="#">
-            <img className="logo" src="/images/logo.jpg" alt="Logo" />
+            <img className="logo" src="/images/logo.png" alt="Logo" />
           </a>
-          <div className="container-fluid">
-            <ul className="navbar-nav ms-auto">
-              <li>
+          <div className="con">
+            <ul className="navbar-nav">
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   aria-current="page"
                   href="#"
                 >
                   Home
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   About us
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   Services
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   Products
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   Solutions
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   Career
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
-                  className="navBtn"
+                  className="nav-link"
                   href="#"
                 >
                   Contact us
