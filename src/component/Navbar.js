@@ -6,9 +6,9 @@ export default function Navbar () {
   <>
       <div>
         <nav
-          className="navbar navbar-expand-lg" >
+          className="navbar navbar-expand-md" >
           <a className="navbar-brand" href="#">
-            <img className="logo" src="/images/logo.png" alt="Logo" />
+            <img className="img-fluid" src="/images/logo.png" alt="Logo" />
           </a>
           <div className="con">
             <ul className="navbar-nav">

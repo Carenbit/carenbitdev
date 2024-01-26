@@ -1,13 +1,13 @@
-.logo {
-  width: auto;
-  height: 88px;
+.img-fluid {
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   background: lightgray 50% / cover no-repeat;
 }
 
 .navbar {
   width: auto;
-  height: 97px;
+  height: 80px;
   flex-shrink: 0;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
