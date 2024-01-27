@@ -3,8 +3,13 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 0.8fr 1fr;
   gap: 0px;
-  height: 100%;
-  margin-left: 10%;
+  padding-left: 10%;
+  padding-top: 15%;
+  background: url("../../assets/heroEllipse.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90vh;
 }
 
 .plmImage {
@@ -21,4 +26,45 @@
 .mainHeading small {
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #homePage {
+    grid-template-rows: 0.2fr 0.5fr;
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .plmImage {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+
+  .mainHeading small {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #homePage {
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-columns: 0.8fr 1fr;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #homePage {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  /* .plmImage {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    /* grid-row-end: 3;
+    grid-column-end: 3; */
 }
