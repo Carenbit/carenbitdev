@@ -1,15 +1,15 @@
 #homePage {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   grid-template-columns: 0.8fr 1fr;
   gap: 0px;
   padding-left: 10%;
-  padding-top: 15%;
+  padding-top: 10%;
   background: url("../../assets/heroEllipse.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 90vh;
+  max-height: 90vh;
 }
 
 .plmImage {
@@ -20,20 +20,32 @@
 }
 
 .mainHeading {
-  position: relative;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  padding-top: 15%;
+  height: fit-content;
+  padding-bottom: 20px;
 }
 
-.mainHeading small {
-  position: absolute;
-  bottom: 0;
+p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (max-width: 768px) {
   #homePage {
     grid-template-rows: 0.2fr 0.5fr;
     grid-template-columns: 1fr;
-    padding-top: 0;
     text-align: center;
+    padding-top: 0;
+    padding-right: 10%;
+    background-position-y: 60px;
+    background: size 80%;
   }
 
   .plmImage {
@@ -43,9 +55,18 @@
     grid-column-end: 2;
   }
 
-  .mainHeading small {
-    position: relative;
-    top: 50px;
+  .mainHeading {
+    font-size: 30px;
+    line-height: 40.5px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 300px;
   }
 }
 
@@ -53,6 +74,19 @@
   #homePage {
     grid-template-rows: 0.3fr 0.5fr;
     grid-template-columns: 0.8fr 1fr;
+    padding-top: 15%;
+  }
+
+  .mainHeading {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    padding-top: 15%;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
   }
 }
 
@@ -60,11 +94,6 @@
   #homePage {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 0.8fr 1fr;
+    padding-top: 10%;
   }
-
-  /* .plmImage {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    /* grid-row-end: 3;
-    grid-column-end: 3; */
 }
