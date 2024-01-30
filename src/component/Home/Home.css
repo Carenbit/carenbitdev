@@ -37,7 +37,7 @@ p {
   letter-spacing: -0.02em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
   #homePage {
     grid-template-rows: 0.2fr 0.5fr;
     grid-template-columns: 1fr;
@@ -70,7 +70,7 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #homePage {
     grid-template-rows: 0.3fr 0.5fr;
     grid-template-columns: 0.8fr 1fr;
@@ -90,10 +90,24 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 768px) {
   #homePage {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 0.8fr 1fr;
     padding-top: 10%;
+  }
+
+  .plmImage {
+    padding-top: 25%;
+  }
+
+  .mainHeading {
+    font-size: 26px;
+    line-height: 36px;
+    padding-top: 15%;
+    height: fit-content;
+  }
+  p {
+    font-size: 16px;
   }
 }
