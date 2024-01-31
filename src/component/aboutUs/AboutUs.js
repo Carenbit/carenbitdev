@@ -1,5 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
+import mission from "../../assets/mission.png";
+import vision from "../../assets/vision.png";
 
 const AboutUs = () => {
   return (
@@ -14,7 +16,7 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="visionCard">
-        <img />
+        <img src={vision} alt="..." />
         <div>
           <h2>Vision</h2>
           <p>
@@ -25,7 +27,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="missionCard">
-        <img />
+        <img src={mission} alt="..." />
         <div>
           <h2>Mission</h2>
           <p>
