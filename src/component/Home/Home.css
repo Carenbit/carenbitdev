@@ -37,7 +37,7 @@ p {
   letter-spacing: -0.02em;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 464px) {
   #homePage {
     grid-template-rows: 0.2fr 0.5fr;
     grid-template-columns: 1fr;
@@ -90,7 +90,7 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 464px) and (max-device-width: 768px) {
   #homePage {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 0.8fr 1fr;
