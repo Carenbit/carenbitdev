@@ -88,6 +88,10 @@ p {
   p {
     font-size: 16px;
   }
+
+  .plmImage {
+    padding-left: 10%;
+  }
 }
 
 @media only screen and (min-device-width: 464px) and (max-device-width: 768px) {
@@ -109,5 +113,11 @@ p {
   }
   p {
     font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .plmImage {
+    padding-left: 20%;
   }
 }

@@ -11,7 +11,7 @@ const Home = () => {
           Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle
           Management.
         </p>
-        <button>Quick Inquiry</button>
+        <button>Quick Enquiry</button>
       </div>
       <img src={frameHome} alt="..." class="plmImage img-fluid" />
     </div>
