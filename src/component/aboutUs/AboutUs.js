@@ -9,7 +9,7 @@ const AboutUs = (props) => {
   return (
     <div id="aboutUsPage">
       <div className="aboutTitle">
-        <h1>Welcome To Carenbit</h1>
+        <h1 className="welcomeMessage">Welcome To Carenbit</h1>
         {innerwidth > 464 ? (
           <p className="description my-4 ">
             Carenbit Technology Services, founded in 2022, is a pioneering

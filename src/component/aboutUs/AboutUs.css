@@ -1,16 +1,15 @@
 #aboutUsPage {
   padding: 50px 30px;
-  margin: 20px;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-h1 {
+.welcomeMessage {
   font-size: 30px;
   font-weight: 600;
   line-height: 48px;
-  letter-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
 }
 
 .description {
@@ -64,9 +63,33 @@ h1 {
 @media only screen and (max-device-width: 1024px) {
   .blockCard {
     flex-direction: column;
+    gap: 0px;
   }
 
   .description {
     font-size: 16px;
+  }
+
+  .statements p {
+    font-size: 16px;
+  }
+
+  .cardImage {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 464px) {
+  .welcomeMessage {
+    font-size: 24px;
+  }
+  .blockCard {
+    margin: 20px 0;
+  }
+  .statements {
+    padding: 0;
+  }
+  .statements p {
+    font-size: 14px;
   }
 }
