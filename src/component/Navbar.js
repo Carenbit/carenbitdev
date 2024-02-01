@@ -9,6 +9,7 @@ export default function Navbar() {
             <img className="img-fluid" src="/images/logo.png" alt="Logo" />
           <a className="navbar-brand" href="#">
           </a>
+          {/* Hamburger Button */}
           <button
             className="navbar-toggler"
             type="button"
