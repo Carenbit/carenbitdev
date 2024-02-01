@@ -1,10 +1,12 @@
 import './App.css';
-import Navbar from './component/Navbar';
+import Navbar from './component/NavigationBar/Navbar';
+import Services from './component/Services/Services';
 
 function App() {
   return (
     <>
     <Navbar/>
+    <Services/>
     </>
   );
 }
