@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home/Home";
 import AboutUs from "./component/aboutUs/AboutUs";
+import ContactUs from "./component/ContactUs/ContactUs";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -18,6 +19,7 @@ const App = () => {
       <Navbar />
       <Home />
       <AboutUs innerwidth={width} />
+      <ContactUs />
     </div>
   );
 };
