@@ -1,8 +1,16 @@
 import React from "react";
 import "./ContactUs.css";
-import { ImMail } from "react-icons/im";
+import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
+import {
+  FaPhoneAlt,
+  FaLinkedin,
+  FaInstagram,
+  FaRegCopyright,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
+import carenbit from "../../assets/carenbit.png";
 
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mwkjdqza");
@@ -37,9 +45,9 @@ const ContactUs = () => {
           </motion.div>
         </>
       )}
-      <h1 className="welcomeMessage">Contact Us</h1>
-      <div className="contactForm">
-        <form onSubmit={handleFormSubmit}>
+      <h1 className="text-center contactHeading">Contact Us</h1>
+      <div className="contactBlock">
+        <form onSubmit={handleFormSubmit} className="contactForm">
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -73,27 +81,71 @@ const ContactUs = () => {
             field="message"
             errors={state.errors}
           />
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="btn btn-primary"
-          >
-            Submit
+          <button type="submit" disabled={state.submitting} className="mx-auto">
+            Send message
           </button>
         </form>
+        <div className="contactBox">
+          <p>
+            <FaLocationDot className="contactIcon" />
+            <span className="spacing">Pune, Maharashtra</span>
+          </p>
+          <p>
+            <FaPhoneAlt className="contactIcon" />
+            <span className="spacing">+91 1234567890</span>
+          </p>
+          <p>
+            <MdEmail className="contactIcon" />
+            <span className="spacing">companyxyz@company.com</span>
+          </p>
+        </div>
       </div>
-      <div>
-        <h3 className="contactDetails">Contact Details</h3>
-        <p className="contactDetails">
-          Email:{" "}
-          <a
-            href="mailto:ashasvijayan@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ImMail />
-          </a>
+      <div className="footer d-flex ">
+        <div>
+          <img src={carenbit} alt="carenbit" className="carenbit" />
+        </div>
+        <p className="mediaIcon">
+          <FaRegCopyright />
+          2024 Carenbit
         </p>
+        <div className=" d-flex justify-content-between gap-3">
+          <span className="contactDetails">
+            <a
+              href="mailto:companyxyz@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MdEmail className="mediaIcon" />
+            </a>
+          </span>
+          <span className="contactDetails">
+            <a
+              href="https://linkedin.com/in/carenbit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="mediaIcon" />
+            </a>
+          </span>
+          <span className="contactDetails">
+            <a
+              href="https://instagram.com/carenbit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="mediaIcon" />
+            </a>
+          </span>
+          <span className="contactDetails">
+            <a
+              href="https://twitter.com/carenbit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaXTwitter className="mediaIcon" />
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   );
