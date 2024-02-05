@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import { ImMail } from "react-icons/im";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 
@@ -36,20 +37,37 @@ const ContactUs = () => {
           </motion.div>
         </>
       )}
-      <div className="contactTitle">
-        <h1 className="welcomeMessage">Contact Us</h1>
-        <p className="description my-4 ">
-          We are here to help you. Please feel free to contact us for any
-          queries or assistance. We will get back to you as soon as possible.
-        </p>
-      </div>
+      <h1 className="welcomeMessage">Contact Us</h1>
       <div className="contactForm">
         <form onSubmit={handleFormSubmit}>
-          <input id="name" type="name" name="name" placeholder="Name" />
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input
+            id="name"
+            type="name"
+            name="name"
+            placeholder="Enter Full Name"
+          />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
-          <input id="email" type="email" name="email" placeholder="Email" />
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter Email Address"
+          />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <textarea id="message" name="message" placeholder="Message" />
+          <label htmlFor="message" className="form-label">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your Message"
+          />
           <ValidationError
             prefix="Message"
             field="message"
@@ -63,6 +81,19 @@ const ContactUs = () => {
             Submit
           </button>
         </form>
+      </div>
+      <div>
+        <h3 className="contactDetails">Contact Details</h3>
+        <p className="contactDetails">
+          Email:{" "}
+          <a
+            href="mailto:ashasvijayan@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ImMail />
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home/Home";
 import AboutUs from "./component/aboutUs/AboutUs";
@@ -17,9 +18,16 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <div id="home">
+        <Home />
+      </div>
       <AboutUs innerwidth={width} />
       <ContactUs />
+      <div className="scrollTop">
+        <a href="#home" aria-label="scrollToTop">
+          <MdKeyboardDoubleArrowUp className="iconvector" />
+        </a>
+      </div>
     </div>
   );
 };
