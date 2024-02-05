@@ -100,10 +100,7 @@ textarea {
   .contactIcon {
     font-size: 20px;
   }
-  .footer {
-    height: fit-content;
-    justify-content: center;
-  }
+
   p {
     font-size: 16px;
   }
@@ -115,6 +112,9 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .mediaIcon {
+    font-size: 16px;
   }
 }
 
