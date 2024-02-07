@@ -18,7 +18,7 @@ const AboutUs = (props) => {
             potential of businesses across diverse industries.
           </p>
         ) : (
-          <p>
+          <p className="description my-4 ">
             At Carenbit, we're driven by a singular passion: to empower
             businesses with cutting-edge Product Lifecycle Management (PLM)
             solutions that redefine excellence.

@@ -81,7 +81,11 @@ const ContactUs = () => {
             field="message"
             errors={state.errors}
           />
-          <button type="submit" disabled={state.submitting} className="mx-auto">
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="mx-auto contactButton"
+          >
             Send message
           </button>
         </form>
