@@ -1,0 +1,126 @@
+#homePage {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 0px;
+  padding-left: 10%;
+  padding-top: 10%;
+  background: url("../../assets/heroEllipse.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-height: 90vh;
+}
+
+.plmImage {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+.mainHeading {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.005em;
+  padding-top: 15%;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+.mailIcon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 464px) {
+  #homePage {
+    grid-template-rows: 0.2fr 0.5fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 0;
+    padding-right: 10%;
+    background-position-y: 60px;
+    background: size 80%;
+  }
+
+  .plmImage {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+
+  .mainHeading {
+    font-size: 30px;
+    line-height: 40.5px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    text-align: center;
+    max-width: 300px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #homePage {
+    grid-template-rows: 0.3fr 0.5fr;
+    grid-template-columns: 0.8fr 1fr;
+    padding-top: 15%;
+  }
+
+  .mainHeading {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    padding-top: 15%;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  .plmImage {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 464px) and (max-device-width: 768px) {
+  #homePage {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.8fr 1fr;
+    padding-top: 10%;
+  }
+
+  .plmImage {
+    padding-top: 25%;
+  }
+
+  .mainHeading {
+    font-size: 26px;
+    line-height: 36px;
+    padding-top: 15%;
+    height: fit-content;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .plmImage {
+    padding-left: 20%;
+  }
+}

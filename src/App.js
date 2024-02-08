@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import Navbar from "./component/Navbar";
+import Home from "./component/Home/Home";
+import AboutUs from "./component/aboutUs/AboutUs";
+import ContactUs from "./component/ContactUs/ContactUs";
+import Products from "./component/Products/Products";
 
-function App() {
+const App = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <Navbar />
+      <div id="home">
+        <Home />
+      </div>
+      <AboutUs innerwidth={width} />
+      <Products />
+      <ContactUs />
+      <div className="scrollTop">
+        <a href="#home" aria-label="scrollToTop">
+          <MdKeyboardDoubleArrowUp className="iconvector" />
         </a>
-      </header>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
