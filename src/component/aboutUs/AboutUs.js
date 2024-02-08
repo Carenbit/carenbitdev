@@ -25,12 +25,8 @@ const AboutUs = (props) => {
           </p>
         )}
       </div>
-      <div className="blockCard p-5">
-        <img
-          src={vision}
-          alt="..."
-          class="cardImage img-fluid bg-white rounded-3 p-3"
-        />
+      <div className="blockCard d-flex align-content-center justify-content-center">
+        <img src={vision} alt="..." class="cardImage bg-white rounded-3 p-3" />
         <div className="statements px-1">
           <h2>Vision</h2>
           <p>
@@ -40,7 +36,7 @@ const AboutUs = (props) => {
           </p>
         </div>
       </div>
-      <div className="blockCard reverse p-5">
+      <div className="blockCard reverse">
         <img
           src={mission}
           alt="..."

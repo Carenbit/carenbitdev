@@ -146,6 +146,10 @@ textarea:focus {
     flex-direction: column-reverse;
     gap: 0;
   }
+  .success {
+    font-size: 15px;
+    padding: 5px;
+  }
 }
 
 @media only screen and (min-device-width: 464px) and (max-device-width: 768px) {

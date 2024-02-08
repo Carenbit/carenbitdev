@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div>
       <h1 className="text-center pHeading">Our Products</h1>
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap pContainer">
         <div className="d-flex flex-column p-3 productCard align-items-center">
           <img src={placeHolderImage} alt="..." className="placeHolderImage" />
           <h4 className="pNames">Product name</h4>

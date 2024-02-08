@@ -15,9 +15,21 @@ import carenbit from "../../assets/carenbit.png";
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mwkjdqza");
   const [success, setSuccess] = React.useState(false);
+  const [error, setError] = React.useState(false);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    if (
+      !event.target.name.value ||
+      !event.target.email.value ||
+      !event.target.message.value
+    ) {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
+      return;
+    }
     await handleSubmit(event);
     setSuccess(true);
     const formElement = event.target;
@@ -45,6 +57,23 @@ const ContactUs = () => {
           </motion.div>
         </>
       )}
+      {error && (
+        <>
+          <motion.div
+            initial={{ opacity: 0, x: "30vw", scale: 0.3 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: "-30vw", scale: 0.3 }}
+            transition={{
+              type: "spring",
+              stiffness: 120,
+            }}
+            className="success"
+          >
+            <p>Please fill all the fields</p>
+          </motion.div>
+        </>
+      )}
+
       <h1 className="text-center contactHeading">Contact Us</h1>
       <div className="contactBlock">
         <form onSubmit={handleFormSubmit} className="contactForm">
@@ -88,6 +117,7 @@ const ContactUs = () => {
           >
             Send message
           </button>
+          <ValidationError errors={state.errors} />
         </form>
         <div className="contactBox">
           <p>

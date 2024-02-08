@@ -9,7 +9,7 @@
 .productCard {
   margin: 5%;
   width: 40%;
-  min-height: 70%;
+  min-height: 10%;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff9f0;
@@ -47,5 +47,11 @@
   }
   .pNames {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .pContainer {
+    margin: 2% 18%;
   }
 }
