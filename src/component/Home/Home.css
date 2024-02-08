@@ -36,6 +36,9 @@ p {
   line-height: 30px;
   letter-spacing: -0.02em;
 }
+.mailIcon {
+  margin-right: 5px;
+}
 
 @media screen and (max-width: 464px) {
   #homePage {
