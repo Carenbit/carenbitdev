@@ -1,28 +1,23 @@
 import React from "react";
 import "./Services.css";
-
+import ColorBox from "./servicesCard"
 
 export default function services() {
   return (
-    <>
+    <><div className="WholeSection">
       <h3 className="heading">Our Services</h3>
       <div className="horizontal-container">
-      <div className="d1">
-        <img className="Ellipse1" src="/images/Ellipse 1.svg" alt="xyz" />
-        <div className="textb1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque optio vel commodi corporis quos id consequatur, consectetur animi illum dolor, nobis magni autem! Sequi doloribus deserunt dicta dolores blanditiis?
+        <div>
+       <ColorBox cardColor="#FB6738" TextColor="White" SubheadingColor="#fff9f0" ImgSrc="/images/Ellipse 1.svg" TextContent="Whether you need a responsive website, intuitive mobile app, or both, our expert team will bring your vision to life with precision and flair."
+        Subheading="Web & Mobile Development "></ColorBox>
         </div>
-      </div>
-      <div className="d2">
-        <img className="Ellipse2" src="/images/Ellipse 1.svg" alt="xyz" />
-        <div className="textb2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque optio vel commodi corporis quos id consequatur, consectetur animi illum dolor, nobis magni autem! Sequi doloribus deserunt dicta dolores blanditiis?
+        <div>
+          <ColorBox cardColor="#fff9f0" TextColor="#555555"SubheadingColor="#FB6738" ImgSrc="/images/Ellipse2.svg" TextContent="From initial ideation to end-of-life strategies, we provide robust tools to optimize processes, minimize risks, and drive growth
+        " Subheading=" Product Lifecycle Software"></ColorBox>
         </div>
-      </div>
-      <div className="d3">
-        <img className="Ellipse3" src="/images/Ellipse 1.svg" alt="xyz" />
-        <div className="textb3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque optio vel commodi corporis quos id consequatur, consectetur animi illum dolor, nobis magni autem! Sequi doloribus deserunt dicta dolores blanditiis?
+        <div>
+        <ColorBox cardColor="#FB6738" TextColor="White" SubheadingColor="#fff9f0"ImgSrc="/images/Ellipse 1.svg" TextContent="Unlock the full potential of your existing systems with our seamless integration solutions."
+        Subheading="Integration Solution"></ColorBox>
         </div>
       </div>
       </div>

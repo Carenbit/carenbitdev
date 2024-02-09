@@ -6,9 +6,7 @@ export default function Navbar() {
     <>
       <div>
         <nav className="navbar navbar-expand-lg">
-            <img className="img-fluid" src="/images/logo.png" alt="Logo" />
-          <a className="navbar-brand" href="#">
-          </a>
+         
           {/* Hamburger Button */}
           <button
             className="navbar-toggler"
@@ -21,9 +19,15 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="logo">
+            <img className="img-fluid" src="/images/logo.png" alt="Logo" />
+          </div>
+          <a className="navbar-brand" href="#">
+          </a>
+          <div className="collapse-navbar-collapse" id="navbarSupportedContent">
             <div className="con">
               <ul className="navbar-nav">
+          
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="#">
                     Home
@@ -47,11 +51,6 @@ export default function Navbar() {
                 <li className="nav-item">
                   <a className="nav-link" href="#">
                     Solutions
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Career
                   </a>
                 </li>
                 <li className="nav-item">

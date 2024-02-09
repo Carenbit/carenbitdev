@@ -1,0 +1,108 @@
+.Solution-Section{
+    
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  min-height: 100vh;
+    gap: 80px;
+}
+.solution-container{
+    background-color: #FFF4F0;
+    width: 1213px;
+    height: 502px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:45px;
+    padding-left: 30px;
+    padding-right:30px;
+  
+order: 2;
+flex-grow: 0;
+}
+.solution-container>*{
+    margin:0%;
+    padding: 0%;
+    gap:40px;
+
+}
+.heading{
+    text-align: center;
+  font-size: 2.8rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+/* Introduction copy lorem ipsum dolor sit amet consectetur adipiscing. */
+
+
+.subheading{
+    width: 325px;
+    height:auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 135%;
+    color:black;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+}
+.Text{
+    width: 325px;
+    height: Auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    color: #555555;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    align-self: stretch;
+}
+.solution1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:30px;
+}
+.solution-img{
+    border-radius: 10px;
+    height:170px;
+    width:170px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .solution-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:45px;
+        flex-wrap: wrap;
+        width: 345px;
+        background-color: White;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom:30px;
+    height: auto;
+    }
+    .Text{
+        font-size: 0.8rem;
+    }
+    .subheading{
+        font-size:1.25rem;
+    }
+}
