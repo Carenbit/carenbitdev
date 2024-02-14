@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match screenshot of Products component 1`] = `
+<div>
+  <div>
+    <h1
+      class="text-center pHeading"
+    >
+      Our Products
+    </h1>
+    <div
+      class="d-flex flex-wrap pContainer"
+    >
+      <div
+        class="d-flex flex-column p-3 productCard align-items-center"
+      >
+        <img
+          alt="..."
+          class="placeHolderImage"
+          src="placeholder.png"
+        />
+        <h4
+          class="pNames"
+        >
+          Product name
+        </h4>
+        <p
+          class="fw-light text-center fs-6"
+        >
+          Lörem ipsum susanne Jonasson Anette Nilsson medan Axel Ahmed Adam Jönsson. Charlotta Ek Alice Arvidsson i David
+           
+        </p>
+      </div>
+      <div
+        class="d-flex flex-column p-3 productCard align-items-center"
+      >
+        <img
+          alt="..."
+          class="placeHolderImage"
+          src="placeholder.png"
+        />
+        <h4
+          class="pNames"
+        >
+          Product name
+        </h4>
+        <p
+          class="fw-light text-center fs-6"
+        >
+          Lörem ipsum susanne Jonasson Anette Nilsson medan Axel Ahmed Adam Jönsson. Charlotta Ek Alice Arvidsson i David
+           
+        </p>
+      </div>
+      <div
+        class="d-flex flex-column p-3 productCard align-items-center"
+      >
+        <img
+          alt="..."
+          class="placeHolderImage"
+          src="placeholder.png"
+        />
+        <h4
+          class="pNames"
+        >
+          Product name
+        </h4>
+        <p
+          class="fw-light text-center fs-6"
+        >
+          Lörem ipsum susanne Jonasson Anette Nilsson medan Axel Ahmed Adam Jönsson. Charlotta Ek Alice Arvidsson i David
+           
+        </p>
+      </div>
+      <div
+        class="d-flex flex-column p-3 productCard align-items-center"
+      >
+        <img
+          alt="..."
+          class="placeHolderImage "
+          src="placeholder.png"
+        />
+        <h4
+          class="pNames"
+        >
+          Product name
+        </h4>
+        <p
+          class="fw-light text-center fs-6"
+        >
+          Lörem ipsum susanne Jonasson Anette Nilsson medan Axel Ahmed Adam Jönsson. Charlotta Ek Alice Arvidsson i David
+           
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
