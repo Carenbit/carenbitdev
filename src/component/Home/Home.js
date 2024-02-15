@@ -12,7 +12,11 @@ const Home = () => {
           Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle
           Management.
         </p>
-        <a href="mailto:companyxyz@gmail.com" target="_blank" rel="noreferrer">
+        <a
+          href="mailto:carenbit.tech@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <button>
             <MdEmail className="mailIcon" />
             Quick Enquiry
