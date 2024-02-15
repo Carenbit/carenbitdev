@@ -1,68 +1,44 @@
 import React from "react";
 import "./NavBar.css";
 import carenbit from "../assets/carenbit.png"
+import Hamburger from "../assets/hamburger.svg"
+import Cross from "../assets/cross.svg"
 
 export default function Navbar() {
   return (
     <>
-      <div>
-        <nav className="navbar navbar-expand-lg">
-         
-          {/* Hamburger Button */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="logo">
-            <img className="img-fluid" src={carenbit}alt="Logo" />
-          </div>
-          <a className="navbar-brand" href="#">
-          </a>
-          <div className="collapse-navbar-collapse" id="navbarSupportedContent">
-            <div className="con">
-              <ul className="navbar-nav">
-          
-                <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About us
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Products
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Solutions
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div className="Navbar">
+        <nav>
+            <ul className="Nav-items">
+              <li><img src={carenbit} alt="logo image" ></img></li>
+              <li><a className="Nav-link">Home</a></li>
+              <li><a className="Nav-link">About Us</a></li>
+              <li><a className="Nav-link">Services</a></li>
+              <li><a className="Nav-link">Products</a></li>
+              <li><a className="Nav-link">Solutions</a></li>
+              <li><a className="Nav-link">Contact Us</a></li>
+              <li><button className="Hamburger" onClick={function(){
+                const sidebar=document.querySelector(".side-bar")
+                sidebar.style.display="flex"
+              }}><img src={Hamburger} alt="hamburger" style={{width:"30px" ,height:"30px"}}></img></button></li>
+
+            </ul>
+            <ul className="side-bar">
+              <li><button className="Cross" onClick={function(){
+                const sidebar=document.querySelector(".side-bar")
+                sidebar.style.display="none"
+              }}><img src={Cross} alt="cross button"></img></button></li>
+              <li><a >Home</a></li>
+              <li><a >About Us</a></li>
+              <li><a >Services</a></li>
+              <li><a >Products</a></li>
+              <li><a >Solutions</a></li>
+              <li><a>Contact Us</a></li>
+              
+            </ul>
+     
         </nav>
+
       </div>
     </>
   );

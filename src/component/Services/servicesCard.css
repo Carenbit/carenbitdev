@@ -5,8 +5,11 @@
     align-items: flex-start;
     padding: 27px 41px 48px 27px;
     position: relative;
+   flex-grow: 1;
+   margin:5%;
+
     width: 316px;
-    height: 397px;
+    max-height: 397px;
     
    
     border-radius: 20px;
@@ -68,5 +71,31 @@
     align-items: flex-start;
     gap:45px;
 
+
+  }
+  @media only screen and  (max-width:800px){
+    .textContent{
+      font-size:0.9rem
+    }
+
+    
+  }
+  @media only  screen and (min-device-width:324px) and (max-device-width:464px){
+    .textContent{
+      font-size:0.8rem;
+    }
+    .labelName{
+      font-size: 1.2rem;
+    }
+    .Ellipse1{
+      width:90px;
+      height:90px;
+
+    }
+    .cardContainer {
+      width:296px;
+      height:377px;
+
+    }
 
   }

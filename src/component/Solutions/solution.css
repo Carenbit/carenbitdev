@@ -3,23 +3,25 @@
     display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center; /* Center vertically */
   min-height: 100vh;
     gap: 80px;
 }
 .solution-container{
     background-color: #FFF4F0;
-    width: 1213px;
-    height: 502px;
+    width: 85vw;
+    height:30vw;
     border-radius: 20px;
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
-    gap:45px;
-    padding-left: 30px;
-    padding-right:30px;
+    gap:30px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 50px;
   
 order: 2;
 flex-grow: 0;
@@ -32,7 +34,7 @@ flex-grow: 0;
 }
 .heading{
     text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -44,7 +46,7 @@ flex-grow: 0;
 
 
 .subheading{
-    width: 325px;
+    width: 25vw;
     height:auto;
     font-family: 'Inter';
     font-style: normal;
@@ -59,7 +61,7 @@ flex-grow: 0;
     
 }
 .Text{
-    width: 325px;
+    width: 25vw;
     height: Auto;
     font-family: 'Inter';
     font-style: normal;
@@ -73,10 +75,12 @@ flex-grow: 0;
     align-self: stretch;
 }
 .solution1{
+    width:26.9vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    text-wrap: wrap;
     gap:30px;
 }
 .Solution-img{
@@ -84,12 +88,67 @@ flex-grow: 0;
     height:170px;
     width:170px;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media only screen  and (min-width:464px)and (max-width:824px){
+    .Text{
+        font-size:1rem;
+        font-weight: 300;
+        width: 300px;
+
+    }
+    .subheading{
+        width: 300px;
+        font-size:1.8rem;
+    }
+    .solution1{
+        width: 300px;;
+        
+    }
+    .solution-container{
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:45px;
+            flex-wrap: wrap;
+        
+            background-color: White;
+            padding-top: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom:50px;
+        height: auto;
+        }
+        .heading{
+            font-size: 30px;
+        }/* Our Services */
+
+    
+}
+@media only screen and (min-width:824px) and (max-width:996px){
+    .Text{
+        font-size: 0.9rem;
+        
+    }
+    .heading{
+      
+      font-size: 2.2rem;
+      
+    }
+    .solution-container{
+        height: auto;
+    
+    }
+
+   
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 824px) {
     .solution-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap:45px;
+        height: auto;
         flex-wrap: wrap;
         width: 345px;
         background-color: White;
@@ -97,12 +156,13 @@ flex-grow: 0;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom:30px;
-    height: auto;
+    
     }
     .Text{
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
     .subheading{
         font-size:1.25rem;
     }
+
 }
