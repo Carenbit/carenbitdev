@@ -6,6 +6,8 @@ import Home from "./component/Home/Home";
 import AboutUs from "./component/aboutUs/AboutUs";
 import ContactUs from "./component/ContactUs/ContactUs";
 import Products from "./component/Products/Products";
+import Solutions from "./component/Solutions/solution";
+import Services from "./component/Services/Services";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -23,7 +25,9 @@ const App = () => {
         <Home />
       </div>
       <AboutUs innerwidth={width} />
+      <Services/>
       <Products />
+      <Solutions/>
       <ContactUs />
       <div className="scrollTop">
         <a href="#home" aria-label="scrollToTop">
