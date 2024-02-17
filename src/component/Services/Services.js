@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <><div className="WholeSection">
       <div className="divisorFirst"></div>
-      <h3 className="heading">Our Services</h3>
+      <div className="Seheading">Our Services</div>
       <div className="horizontal-container">
         <div>
        <ColorBox cardColor="#fff9f0" TextColor="#555555" SubheadingColor="#FB6738" ImgSrc={Ellipse2} TextContent="Whether you need a responsive website, intuitive mobile app, or both, our expert team will bring your vision to life with precision and flair."
