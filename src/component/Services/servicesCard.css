@@ -6,7 +6,7 @@
     padding: 27px 41px 48px 27px;
     position: relative;
    flex-grow: 1;
-   margin:5%;
+   margin:0%;
 
     width: 316px;
     max-height: 397px;
@@ -82,10 +82,10 @@
   }
   @media only  screen and (min-device-width:324px) and (max-device-width:464px){
     .textContent{
-      font-size:0.8rem;
+      font-size:0.9rem;
     }
     .labelName{
-      font-size: 1.2rem;
+      font-size: 1.25rem;
     }
     .Ellipse1{
       width:90px;

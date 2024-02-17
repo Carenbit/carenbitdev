@@ -24,11 +24,21 @@ const App = () => {
       <div id="home">
         <Home />
       </div>
+      <div id="about-us">
       <AboutUs innerwidth={width} />
-      <Services/>
-      <Products />
-      <Solutions/>
+      </div>
+    <div id="services">
+    <Services/>
+    </div>
+    <div id="products">
+    <Products />
+    </div>
+    <div id="solutions">
+    <Solutions/>
+    </div>
+<div id="contact-us">
       <ContactUs />
+      </div>
       <div className="scrollTop">
         <a href="#home" aria-label="scrollToTop">
           <MdKeyboardDoubleArrowUp className="iconvector" />
