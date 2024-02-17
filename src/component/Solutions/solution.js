@@ -1,6 +1,6 @@
 import React from "react";
 import "./solution.css";
-// import placeholder from "../../assets/placeholder.png";
+import placeholder from "../../assets/placeholder.png";
 export default function solutions() {
   return (
     <div className="Solution-Section">
@@ -8,7 +8,7 @@ export default function solutions() {
       <div className="solution-box">
         <div className="solution-container">
           <div className="solution1">
-            {/* <img className="Solution-img" src={placeholder} alt=""></img> */}
+            <img className="Solution-img" src={placeholder} alt=""></img>
             <div className="subheading">Seamless Integration</div>
             <div className="Text">
               Elevate your product development lifecycle with our advanced
@@ -17,7 +17,7 @@ export default function solutions() {
             </div>
           </div>
           <div className="solution1">
-            {/* <img className="Solution-img" src={placeholder} alt=""></img> */}
+            <img className="Solution-img" src={placeholder} alt=""></img>
             <div className="subheading">Agile Solutions</div>
             <div className="Text">
               Drive innovation and agility in your product lifecycle management
@@ -26,7 +26,7 @@ export default function solutions() {
             </div>
           </div>
           <div className="solution1">
-            {/* <img className="Solution-img" src={placeholder} alt=""></img> */}
+            <img className="Solution-img" src={placeholder} alt=""></img>
             <div className="subheading">AI-Powered Excellence</div>
             <div className="Text">
               Experience engineering excellence like never before with our
