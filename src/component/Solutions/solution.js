@@ -10,7 +10,7 @@ export default function solutions() {
       <div className="solution-box">
         <div className="solution-container">
           <div className="solution1">
-            <img className="Solution-img" src={solution1} alt="image"></img>
+            <img className="Solution-img" src={solution1} alt=""></img>
             <div className="subheading">Seamless Integration</div>
             <div className="Text">
               Elevate your product development lifecycle with our advanced
@@ -19,7 +19,7 @@ export default function solutions() {
             </div>
           </div>
           <div className="solution1">
-            <img className="Solution-img" src={solution2} alt="image"></img>
+            <img className="Solution-img" src={solution2} alt=""></img>
             <div className="subheading">Agile Solutions</div>
             <div className="Text">
               Drive innovation and agility in your product lifecycle management
@@ -28,7 +28,7 @@ export default function solutions() {
             </div>
           </div>
           <div className="solution1">
-            <img className="Solution-img" src={solution3} alt="image"></img>
+            <img className="Solution-img" src={solution3} alt=""></img>
             <div className="subheading">AI-Powered Excellence</div>
             <div className="Text">
               Experience engineering excellence like never before with our
