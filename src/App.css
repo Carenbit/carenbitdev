@@ -1,0 +1,19 @@
+.scrollTop {
+  position: fixed;
+  bottom: 120px;
+  right: 30px;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: #fb6738;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 18px;
+}
+
+.scrollTop a {
+  text-decoration: none;
+  color: #fff;
+}
