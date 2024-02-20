@@ -1,0 +1,101 @@
+.cardContainer {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 27px 41px 48px 27px;
+    position: relative;
+   flex-grow: 1;
+   margin:0%;
+
+    width: 316px;
+    max-height: 397px;
+    
+   
+    border-radius: 20px;
+  }
+  
+   /* .card {
+   Inside auto layout
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /*.iconPlaceholder {
+     Ourservices/card/iconPlaceholder 
+    width: 118px;
+    height: 113px;
+    background: #FFF9F0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  */
+  .labelName {
+    /* Label name */
+    width: 248px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 135%;
+    color: #FFF9F0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+  }
+  
+  .textContent {
+    /* Lorem ipsum dolor sit amet consectetur tempus. Lorem ipsum dolor sit amet consectetur tempus. */
+    width: 248px;
+    height: 88px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    color: #FFF9F0;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  
+   
+  
+  }
+  .Card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:45px;
+
+
+  }
+  @media only screen and  (max-width:800px){
+    .textContent{
+      font-size:0.9rem
+    }
+
+    
+  }
+  @media only  screen and (min-device-width:324px) and (max-device-width:464px){
+    .textContent{
+      font-size:0.9rem;
+    }
+    .labelName{
+      font-size: 1.25rem;
+    }
+    .Ellipse1{
+      width:90px;
+      height:90px;
+
+    }
+    .cardContainer {
+      width:296px;
+      height:377px;
+
+    }
+
+  }

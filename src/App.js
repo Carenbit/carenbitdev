@@ -6,6 +6,8 @@ import Home from "./component/Home/Home";
 import AboutUs from "./component/aboutUs/AboutUs";
 import ContactUs from "./component/ContactUs/ContactUs";
 import Products from "./component/Products/Products";
+import Solutions from "./component/Solutions/solution";
+import Services from "./component/Services/Services";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -22,9 +24,21 @@ const App = () => {
       <div id="home">
         <Home />
       </div>
+      <div id="about-us">
       <AboutUs innerwidth={width} />
-      <Products />
+      </div>
+    <div id="services">
+    <Services/>
+    </div>
+    <div id="products">
+    <Products />
+    </div>
+    <div id="solutions">
+    <Solutions/>
+    </div>
+<div id="contact-us">
       <ContactUs />
+      </div>
       <div className="scrollTop">
         <a href="#home" aria-label="scrollToTop">
           <MdKeyboardDoubleArrowUp className="iconvector" />

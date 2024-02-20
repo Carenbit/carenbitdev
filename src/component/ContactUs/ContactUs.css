@@ -71,6 +71,15 @@ p {
   line-height: 48px;
   letter-spacing: -0.02em;
 }
+.addressBox {
+  display: flex;
+  gap: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
 
 .contactBox {
   display: flex;

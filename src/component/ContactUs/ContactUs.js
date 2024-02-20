@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import carenbit from "../../assets/carenbit.png";
 
 const ContactUs = () => {
-  const [state, handleSubmit] = useForm("mwkjdqza");
+  const [state, handleSubmit] = useForm("xzbnrgyp");
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
 
@@ -120,17 +120,22 @@ const ContactUs = () => {
           <ValidationError errors={state.errors} />
         </form>
         <div className="contactBox">
-          <p>
+          <div className="addressBox">
             <FaLocationDot className="contactIcon" />
-            <span className="spacing">Pune, Maharashtra</span>
-          </p>
+            <div className="address">
+              <span>Dhruv Darshan Co-op. Soc</span>
+              <span> Sector.No-26 </span>
+              <span>Nigdi Pradhikaran </span>Ravet, Tal - Haveli
+              <span> Pune 411044</span>
+            </div>
+          </div>
           <p>
             <FaPhoneAlt className="contactIcon" />
-            <span className="spacing">+91 1234567890</span>
+            <span className="spacing">+91 79723 79031 </span>
           </p>
           <p>
             <MdEmail className="contactIcon" />
-            <span className="spacing">companyxyz@company.com</span>
+            <span className="spacing">carenbit.tech@gmail.com</span>
           </p>
         </div>
       </div>
@@ -145,7 +150,7 @@ const ContactUs = () => {
         <div className=" d-flex justify-content-between gap-3">
           <span className="contactDetails">
             <a
-              href="mailto:companyxyz@gmail.com"
+              href="mailto:carenbit.tech@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -154,7 +159,7 @@ const ContactUs = () => {
           </span>
           <span className="contactDetails">
             <a
-              href="https://linkedin.com/in/carenbit"
+              href="https://www.linkedin.com/company/carenbit/"
               target="_blank"
               rel="noreferrer"
             >
