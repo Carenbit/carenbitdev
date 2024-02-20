@@ -13,9 +13,9 @@ const AboutUs = (props) => {
         {innerwidth > 464 ? (
           <p className="description my-4 ">
             Carenbit Technology Services, founded in 2022, is a pioneering
-            startup based in Pune's tech hub, Wakad. We specialize in providing
-            expert solutions in Teamcenter PLM, aiming to unlock the full
-            potential of businesses across diverse industries.
+            startup based in Pune. We specialize in providing expert solutions
+            in Teamcenter PLM, aiming to unlock the full potential of businesses
+            across diverse industries.
           </p>
         ) : (
           <p className="description my-4 ">
