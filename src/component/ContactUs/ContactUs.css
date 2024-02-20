@@ -47,6 +47,11 @@ p {
   color: #fb6738;
 }
 
+.mediaIcon:hover {
+  color: #fff;
+  scale: 1.2;
+}
+
 .contactBlock {
   display: flex;
   gap: 50px;
@@ -70,6 +75,18 @@ p {
   font-weight: 600;
   line-height: 48px;
   letter-spacing: -0.02em;
+}
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+a:hover {
+  color: #fb6738;
+}
+
+.location:hover {
+  scale: 1.2;
 }
 .addressBox {
   display: flex;

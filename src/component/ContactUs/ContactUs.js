@@ -4,8 +4,8 @@ import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import {
   FaPhoneAlt,
   FaLinkedin,
-  FaInstagram,
   FaRegCopyright,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
@@ -121,7 +121,13 @@ const ContactUs = () => {
         </form>
         <div className="contactBox">
           <div className="addressBox">
-            <FaLocationDot className="contactIcon" />
+            <a
+              href="https://maps.app.goo.gl/nt4ALPAFmyaBAm1A8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLocationDot className="contactIcon location" />
+            </a>
             <div className="address">
               <span>Dhruv Darshan Co-op. Soc</span>
               <span> Sector.No-26 </span>
@@ -134,8 +140,14 @@ const ContactUs = () => {
             <span className="spacing">+91 79723 79031 </span>
           </p>
           <p>
-            <MdEmail className="contactIcon" />
-            <span className="spacing">carenbit.tech@gmail.com</span>
+            <a
+              href="mailto:carenbit.tech@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MdEmail className="contactIcon" />
+              <span className="spacing">carenbit.tech@gmail.com</span>
+            </a>
           </p>
         </div>
       </div>
@@ -145,9 +157,21 @@ const ContactUs = () => {
         </div>
         <p className="mediaIcon">
           <FaRegCopyright />
-          2024 Carenbit
+          2024{" "}
+          <strong>
+            <em>Carenbit</em>
+          </strong>
         </p>
         <div className=" d-flex justify-content-between gap-3">
+          <span className="contactDetails">
+            <a
+              href="https://api.whatsapp.com/send?phone=917972379031"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp className="mediaIcon" />
+            </a>
+          </span>
           <span className="contactDetails">
             <a
               href="mailto:carenbit.tech@gmail.com"
@@ -164,15 +188,6 @@ const ContactUs = () => {
               rel="noreferrer"
             >
               <FaLinkedin className="mediaIcon" />
-            </a>
-          </span>
-          <span className="contactDetails">
-            <a
-              href="https://instagram.com/carenbit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram className="mediaIcon" />
             </a>
           </span>
           <span className="contactDetails">
