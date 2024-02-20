@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match screenshot of AboutUs component 1`] = `
+<div>
+  <div
+    id="aboutUsPage"
+  >
+    <div
+      class="aboutTitle"
+    >
+      <h1
+        class="welcomeMessage"
+      >
+        Welcome To Carenbit
+      </h1>
+      <p
+        class="description my-4 "
+      >
+        At Carenbit, we're driven by a singular passion: to empower businesses with cutting-edge Product Lifecycle Management (PLM) solutions that redefine excellence.
+      </p>
+    </div>
+    <div
+      class="blockCard d-flex align-content-center justify-content-center"
+    >
+      <img
+        alt="..."
+        class="cardImage bg-white rounded-3 p-3"
+        src="vision.png"
+      />
+      <div
+        class="statements px-1"
+      >
+        <h2>
+          Vision
+        </h2>
+        <p>
+          Our vision is to pioneer the Teamcenter PLM landscape, providing clients with high-quality, innovative, and cost-effective solutions, ultimately paving the path for their triumph.
+        </p>
+      </div>
+    </div>
+    <div
+      class="blockCard reverse"
+    >
+      <img
+        alt="..."
+        class="cardImage img-fluid  bg-white rounded-3 p-3"
+        src="mission.png"
+      />
+      <div
+        class="statements"
+      >
+        <h2>
+          Mission
+        </h2>
+        <p>
+          At Carenbit, we propel our clients to unparalleled success in product development by delivering tailor-made and comprehensive Teamcenter PLM solutions, empowering businesses to thrive and excel in the dynamic landscape of today’s evolving market.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
