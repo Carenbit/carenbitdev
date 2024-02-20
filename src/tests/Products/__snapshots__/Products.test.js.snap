@@ -17,12 +17,12 @@ exports[`should match screenshot of Products component 1`] = `
         <img
           alt="..."
           class="placeHolderImage"
-          src="placeholder.png"
+          src="ProductImg1.png"
         />
         <h4
           class="pNames"
         >
-          Product name
+          Streamline
         </h4>
         <p
           class="fw-light text-center fs-6"
@@ -37,12 +37,12 @@ exports[`should match screenshot of Products component 1`] = `
         <img
           alt="..."
           class="placeHolderImage"
-          src="placeholder.png"
+          src="ProductImg2.png"
         />
         <h4
           class="pNames"
         >
-          Product name
+          Automate Workflows
         </h4>
         <p
           class="fw-light text-center fs-6"
@@ -57,7 +57,7 @@ exports[`should match screenshot of Products component 1`] = `
         <img
           alt="..."
           class="placeHolderImage"
-          src="placeholder.png"
+          src="ProductImg3.png"
         />
         <h4
           class="pNames"
@@ -77,7 +77,7 @@ exports[`should match screenshot of Products component 1`] = `
         <img
           alt="..."
           class="placeHolderImage "
-          src="placeholder.png"
+          src="ProductImg4.png"
         />
         <h4
           class="pNames"

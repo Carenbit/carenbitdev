@@ -61,7 +61,9 @@ exports[`should match screenshot of ContactUS component 1`] = `
       <div
         class="contactBox"
       >
-        <p>
+        <div
+          class="addressBox"
+        >
           <svg
             class="contactIcon"
             fill="currentColor"
@@ -76,12 +78,24 @@ exports[`should match screenshot of ContactUS component 1`] = `
               d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
             />
           </svg>
-          <span
-            class="spacing"
+          <div
+            class="address"
           >
-            Pune, Maharashtra
-          </span>
-        </p>
+            <span>
+              Dhruv Darshan Co-op. Soc
+            </span>
+            <span>
+               Sector.No-26 
+            </span>
+            <span>
+              Nigdi Pradhikaran 
+            </span>
+            Ravet, Tal - Haveli
+            <span>
+               Pune 411044
+            </span>
+          </div>
+        </div>
         <p>
           <svg
             class="contactIcon"
@@ -100,7 +114,7 @@ exports[`should match screenshot of ContactUS component 1`] = `
           <span
             class="spacing"
           >
-            +91 1234567890
+            +91 79723 79031 
           </span>
         </p>
         <p>
@@ -125,7 +139,7 @@ exports[`should match screenshot of ContactUS component 1`] = `
           <span
             class="spacing"
           >
-            companyxyz@company.com
+            carenbit.tech@gmail.com
           </span>
         </p>
       </div>
@@ -165,7 +179,7 @@ exports[`should match screenshot of ContactUS component 1`] = `
           class="contactDetails"
         >
           <a
-            href="mailto:companyxyz@gmail.com"
+            href="mailto:carenbit.tech@gmail.com"
             rel="noreferrer"
             target="_blank"
           >
@@ -193,7 +207,7 @@ exports[`should match screenshot of ContactUS component 1`] = `
           class="contactDetails"
         >
           <a
-            href="https://linkedin.com/in/carenbit"
+            href="https://www.linkedin.com/company/carenbit/"
             rel="noreferrer"
             target="_blank"
           >
