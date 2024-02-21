@@ -11,7 +11,9 @@ exports[`should match screenshot of Home component 1`] = `
       Simplify Your Product Journey with Carenbit
     </h1>
     <div>
-      <p>
+      <p
+        class="subTitle"
+      >
         Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle Management.
       </p>
       <a
