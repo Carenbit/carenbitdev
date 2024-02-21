@@ -62,7 +62,7 @@ const App = () => {
       </div>
       {isVisible && (
         <div className="scrollTop">
-          <a href="#home" aria-label="scrollToTop">
+          <a href="#home" aria-label="scrollToTop" title="scrollToTop">
             <MdKeyboardDoubleArrowUp className="iconvector" />
           </a>
         </div>
