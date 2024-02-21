@@ -48,7 +48,6 @@ p {
 }
 
 .mediaIcon:hover {
-  color: #fff;
   scale: 1.2;
 }
 
@@ -83,6 +82,7 @@ a {
 
 a:hover {
   color: #fb6738;
+  text-decoration: none;
 }
 
 .location:hover {

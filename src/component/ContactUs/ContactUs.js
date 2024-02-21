@@ -122,7 +122,7 @@ const ContactUs = () => {
         <div className="contactBox">
           <div className="addressBox">
             <a
-              href="https://maps.app.goo.gl/nt4ALPAFmyaBAm1A8"
+              href="https://maps.app.goo.gl/N5JFFQ46on3axwAz8"
               target="_blank"
               rel="noreferrer"
             >
@@ -136,8 +136,10 @@ const ContactUs = () => {
             </div>
           </div>
           <p>
-            <FaPhoneAlt className="contactIcon" />
-            <span className="spacing">+91 79723 79031 </span>
+            <a href="tel:917972379031">
+              <FaPhoneAlt className="contactIcon" />
+              <span className="spacing">+91 79723 79031 </span>
+            </a>
           </p>
           <p>
             <a
