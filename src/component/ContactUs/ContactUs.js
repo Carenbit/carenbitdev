@@ -143,6 +143,16 @@ const ContactUs = () => {
           </p>
           <p>
             <a
+              href="https://api.whatsapp.com/send?phone=917972379031"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp className="contactIcon" />
+              <span className="spacing">+91 79723 79031 </span>
+            </a>
+          </p>
+          <p>
+            <a
               href="mailto:carenbit.tech@gmail.com"
               target="_blank"
               rel="noreferrer"
@@ -171,7 +181,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaWhatsapp className="mediaIcon" />
+              <FaWhatsapp className="mediaIcon zoom" />
             </a>
           </span>
           <span className="contactDetails">
@@ -180,7 +190,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <MdEmail className="mediaIcon" />
+              <MdEmail className="mediaIcon zoom" />
             </a>
           </span>
           <span className="contactDetails">
@@ -189,7 +199,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="mediaIcon" />
+              <FaLinkedin className="mediaIcon zoom" />
             </a>
           </span>
           <span className="contactDetails">
@@ -198,7 +208,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaXTwitter className="mediaIcon" />
+              <FaXTwitter className="mediaIcon zoom" />
             </a>
           </span>
         </div>
