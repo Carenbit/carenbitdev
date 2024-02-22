@@ -13,9 +13,10 @@
   display: none;
 }
 
-#contactUsPage {
+/* #contactUsPage {
   margin-top: 10%;
-}
+  height: 50vh;
+} */
 .carenbit {
   height: 40px;
 }
@@ -47,6 +48,10 @@ p {
   color: #fb6738;
 }
 
+.zoom:hover {
+  scale: 1.2;
+}
+
 .contactBlock {
   display: flex;
   gap: 50px;
@@ -66,10 +71,24 @@ p {
 }
 
 .contactHeading {
+  padding-top: 7%;
   font-size: 35px;
   font-weight: 600;
   line-height: 48px;
   letter-spacing: -0.02em;
+}
+a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+a:hover {
+  color: #fb6738;
+  text-decoration: none;
+}
+
+.location:hover {
+  scale: 1.2;
 }
 .addressBox {
   display: flex;

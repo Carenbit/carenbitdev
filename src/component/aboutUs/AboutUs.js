@@ -26,7 +26,11 @@ const AboutUs = (props) => {
         )}
       </div>
       <div className="blockCard d-flex align-content-center justify-content-center">
-        <img src={vision} alt="..." class="cardImage bg-white rounded-3 p-3" />
+        <img
+          src={vision}
+          alt="..."
+          className="cardImage bg-white rounded-3 p-3"
+        />
         <div className="statements px-1">
           <h2>Vision</h2>
           <p>

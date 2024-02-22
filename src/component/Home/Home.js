@@ -6,9 +6,11 @@ import frameHome from "../../assets/frameHome.png";
 const Home = () => {
   return (
     <div id="homePage">
-      <h1 class="mainHeading">Simplify Your Product Journey with Carenbit</h1>
+      <h1 className="mainHeading">
+        Simplify Your Product Journey with Carenbit
+      </h1>
       <div>
-        <p>
+        <p className="subTitle">
           Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle
           Management.
         </p>
