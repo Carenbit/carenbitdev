@@ -25,7 +25,7 @@ const Home = () => {
           </button>
         </a>
       </div>
-      <img src={frameHome} alt="..." class="plmImage img-fluid" />
+      <img src={frameHome} alt="..." className="plmImage img-fluid" />
     </div>
   );
 };
