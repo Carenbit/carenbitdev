@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match screenshot of Home component 1`] = `
+<div>
+  <div
+    id="homePage"
+  >
+    <h1
+      class="mainHeading"
+    >
+      Simplify Your Product Journey with Carenbit
+    </h1>
+    <div>
+      <p
+        class="subTitle"
+      >
+        Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle Management.
+      </p>
+      <a
+        href="mailto:carenbit.tech@gmail.com"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <button>
+          <svg
+            class="mailIcon"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+            />
+          </svg>
+          Quick Enquiry
+        </button>
+      </a>
+    </div>
+    <img
+      alt="..."
+      class="plmImage img-fluid"
+      src="frameHome.png"
+    />
+  </div>
+</div>
+`;

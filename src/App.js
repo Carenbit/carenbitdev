@@ -11,13 +11,34 @@ import Services from "./component/Services/Services";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const [isVisible, setIsVisible] = useState(true);
+
   const updateDimensions = () => {
     setWidth(window.innerWidth);
   };
+
+  const listenToScroll = () => {
+    let heightToHideFrom = window.innerHeight;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHideFrom) {
+      isVisible && setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
@@ -25,25 +46,27 @@ const App = () => {
         <Home />
       </div>
       <div id="about-us">
-      <AboutUs innerwidth={width} />
+        <AboutUs innerwidth={width} />
       </div>
-    <div id="services">
-    <Services/>
-    </div>
-    <div id="products">
-    <Products />
-    </div>
-    <div id="solutions">
-    <Solutions/>
-    </div>
-<div id="contact-us">
-      <ContactUs />
+      <div id="services">
+        <Services />
       </div>
-      <div className="scrollTop">
-        <a href="#home" aria-label="scrollToTop">
-          <MdKeyboardDoubleArrowUp className="iconvector" />
-        </a>
+      <div id="products">
+        <Products />
       </div>
+      <div id="solutions">
+        <Solutions />
+      </div>
+      <div id="contact-us">
+        <ContactUs />
+      </div>
+      {isVisible && (
+        <div className="scrollTop">
+          <a href="#home" aria-label="scrollToTop">
+            <MdKeyboardDoubleArrowUp className="iconvector" />
+          </a>
+        </div>
+      )}
     </div>
   );
 };

@@ -4,8 +4,8 @@ import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import {
   FaPhoneAlt,
   FaLinkedin,
-  FaInstagram,
   FaRegCopyright,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
@@ -121,7 +121,13 @@ const ContactUs = () => {
         </form>
         <div className="contactBox">
           <div className="addressBox">
-            <FaLocationDot className="contactIcon" />
+            <a
+              href="https://maps.app.goo.gl/N5JFFQ46on3axwAz8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLocationDot className="contactIcon location" />
+            </a>
             <div className="address">
               <span>Dhruv Darshan Co-op. Soc</span>
               <span> Sector.No-26 </span>
@@ -130,12 +136,30 @@ const ContactUs = () => {
             </div>
           </div>
           <p>
-            <FaPhoneAlt className="contactIcon" />
-            <span className="spacing">+91 79723 79031 </span>
+            <a href="tel:917972379031">
+              <FaPhoneAlt className="contactIcon" />
+              <span className="spacing">+91 79723 79031 </span>
+            </a>
           </p>
           <p>
-            <MdEmail className="contactIcon" />
-            <span className="spacing">carenbit.tech@gmail.com</span>
+            <a
+              href="https://api.whatsapp.com/send?phone=917972379031"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp className="contactIcon" />
+              <span className="spacing">+91 79723 79031 </span>
+            </a>
+          </p>
+          <p>
+            <a
+              href="mailto:carenbit.tech@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MdEmail className="contactIcon" />
+              <span className="spacing">carenbit.tech@gmail.com</span>
+            </a>
           </p>
         </div>
       </div>
@@ -145,16 +169,28 @@ const ContactUs = () => {
         </div>
         <p className="mediaIcon">
           <FaRegCopyright />
-          2024 Carenbit
+          2024{" "}
+          <strong>
+            <em>Carenbit</em>
+          </strong>
         </p>
         <div className=" d-flex justify-content-between gap-3">
+          <span className="contactDetails">
+            <a
+              href="https://api.whatsapp.com/send?phone=917972379031"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp className="mediaIcon zoom" />
+            </a>
+          </span>
           <span className="contactDetails">
             <a
               href="mailto:carenbit.tech@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
-              <MdEmail className="mediaIcon" />
+              <MdEmail className="mediaIcon zoom" />
             </a>
           </span>
           <span className="contactDetails">
@@ -163,16 +199,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="mediaIcon" />
-            </a>
-          </span>
-          <span className="contactDetails">
-            <a
-              href="https://instagram.com/carenbit"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram className="mediaIcon" />
+              <FaLinkedin className="mediaIcon zoom" />
             </a>
           </span>
           <span className="contactDetails">
@@ -181,7 +208,7 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaXTwitter className="mediaIcon" />
+              <FaXTwitter className="mediaIcon zoom" />
             </a>
           </span>
         </div>

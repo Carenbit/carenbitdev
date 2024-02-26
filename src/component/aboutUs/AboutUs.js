@@ -13,9 +13,9 @@ const AboutUs = (props) => {
         {innerwidth > 464 ? (
           <p className="description my-4 ">
             Carenbit Technology Services, founded in 2022, is a pioneering
-            startup based in Pune's tech hub, Wakad. We specialize in providing
-            expert solutions in Teamcenter PLM, aiming to unlock the full
-            potential of businesses across diverse industries.
+            startup based in Pune. We specialize in providing expert solutions
+            in Teamcenter PLM, aiming to unlock the full potential of businesses
+            across diverse industries.
           </p>
         ) : (
           <p className="description my-4 ">
@@ -26,7 +26,11 @@ const AboutUs = (props) => {
         )}
       </div>
       <div className="blockCard d-flex align-content-center justify-content-center">
-        <img src={vision} alt="..." class="cardImage bg-white rounded-3 p-3" />
+        <img
+          src={vision}
+          alt="..."
+          className="cardImage bg-white rounded-3 p-3"
+        />
         <div className="statements px-1">
           <h2>Vision</h2>
           <p>
@@ -40,7 +44,7 @@ const AboutUs = (props) => {
         <img
           src={mission}
           alt="..."
-          class="cardImage img-fluid  bg-white rounded-3 p-3"
+          className="cardImage img-fluid  bg-white rounded-3 p-3"
         />
         <div className="statements">
           <h2>Mission</h2>
