@@ -14,7 +14,7 @@
 }
 
 /* #contactUsPage {
-  max-height: 80vh;
+  padding-top: 10%;
 } */
 .carenbit {
   height: 40px;
@@ -141,6 +141,9 @@ textarea:focus {
   padding-left: 20px;
 }
 @media only screen and (max-device-width: 464px) {
+  #contactUsPage {
+    padding-top: 15%;
+  }
   .contactHeading {
     font-size: 28px;
   }
@@ -180,6 +183,9 @@ textarea:focus {
 }
 
 @media only screen and (min-device-width: 464px) and (max-device-width: 768px) {
+  #contactUsPage {
+    padding-top: 8%;
+  }
   .contactBlock {
     gap: 20px;
     flex-direction: column;

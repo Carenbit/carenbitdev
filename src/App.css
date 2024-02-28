@@ -42,3 +42,17 @@
 .scrollTop a:hover {
   color: #fff;
 }
+
+@media only screen and (min-device-width: 1024px) {
+  #home {
+    min-height: 95vh;
+  }
+}
+
+@media only screen and (max-device-width: 764px) {
+  #home {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    min-height: 95vh;
+  }
+}
