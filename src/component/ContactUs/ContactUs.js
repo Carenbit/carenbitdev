@@ -84,6 +84,7 @@ const ContactUs = () => {
             id="name"
             type="name"
             name="name"
+            autoComplete="Given name"
             placeholder="Enter Full Name"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
@@ -94,6 +95,7 @@ const ContactUs = () => {
             id="email"
             type="email"
             name="email"
+            autoComplete="email"
             placeholder="Enter Email Address"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />

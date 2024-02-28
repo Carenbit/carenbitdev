@@ -44,7 +44,7 @@ const AboutUs = (props) => {
         <img
           src={mission}
           alt="..."
-          class="cardImage img-fluid  bg-white rounded-3 p-3"
+          className="cardImage img-fluid  bg-white rounded-3 p-3"
         />
         <div className="statements">
           <h2>Mission</h2>

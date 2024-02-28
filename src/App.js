@@ -11,28 +11,27 @@ import Services from "./component/Services/Services";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const updateDimensions = () => {
     setWidth(window.innerWidth);
-  };
-
-  const listenToScroll = () => {
-    let heightToHideFrom = window.innerHeight;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-
-    if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
   };
 
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
+
+  const listenToScroll = () => {
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > 500) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
