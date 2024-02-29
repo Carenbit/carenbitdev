@@ -21,7 +21,7 @@ const Home = () => {
             rel="noreferrer"
           >
             <button>
-              <MdEmail className="mailIcon" />
+              <MdEmail className="mailIcon m-1" />
               Quick Enquiry
             </button>
           </a>

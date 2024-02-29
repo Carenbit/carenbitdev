@@ -9,6 +9,17 @@
   border-radius: 10px;
 }
 
+.errorMessage {
+  position: fixed;
+  top: 10vh;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
 .hide {
   display: none;
 }

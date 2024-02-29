@@ -8,6 +8,7 @@ import ContactUs from "./component/ContactUs/ContactUs";
 import Products from "./component/Products/Products";
 import Solutions from "./component/Solutions/solution";
 import Services from "./component/Services/Services";
+import { PiWhatsappLogoFill } from "react-icons/pi";
 
 const App = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -66,6 +67,15 @@ const App = () => {
           </a>
         </div>
       )}
+      <div className="whatsappLink">
+        <a
+          href="https://api.whatsapp.com/send?phone=917972379031"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <PiWhatsappLogoFill className="whatsappIcon" />
+        </a>
+      </div>
     </div>
   );
 };

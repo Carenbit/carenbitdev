@@ -17,8 +17,9 @@ const ContactUs = () => {
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
+    console.log(state.errors);
     if (
       !event.target.name.value ||
       !event.target.email.value ||
@@ -30,14 +31,19 @@ const ContactUs = () => {
       }, 3000);
       return;
     }
-    await handleSubmit(event);
-    setSuccess(true);
-    const formElement = event.target;
-    formElement.reset();
-    setTimeout(() => {
-      setSuccess(false);
-    }, 5000);
+    handleSubmit(event);
   };
+
+  React.useEffect(() => {
+    if (state.succeeded) {
+      setSuccess(true);
+      const formElement = document.getElementById("contactForm");
+      formElement.reset();
+      setTimeout(() => {
+        setSuccess(false);
+      }, 5000);
+    }
+  }, [state.succeeded]);
 
   return (
     <div id="contactUsPage">
@@ -76,7 +82,11 @@ const ContactUs = () => {
 
       <h1 className="text-center contactHeading">Contact Us</h1>
       <div className="contactBlock">
-        <form onSubmit={handleFormSubmit} className="contactForm">
+        <form
+          onSubmit={handleFormSubmit}
+          className="contactForm"
+          id="contactForm"
+        >
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -86,8 +96,15 @@ const ContactUs = () => {
             name="name"
             autoComplete="Given name"
             placeholder="Enter Full Name"
+            minLength={3}
+            maxLength={50}
           />
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
+          <ValidationError
+            prefix="Name"
+            field="name"
+            errors={state.errors}
+            className="errorMessage"
+          />
           <label htmlFor="email" className="form-label">
             Email
           </label>
@@ -98,7 +115,12 @@ const ContactUs = () => {
             autoComplete="email"
             placeholder="Enter Email Address"
           />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError
+            prefix="Email"
+            field="email"
+            errors={state.errors}
+            className="errorMessage"
+          />
           <label htmlFor="message" className="form-label">
             Message
           </label>
@@ -106,11 +128,14 @@ const ContactUs = () => {
             id="message"
             name="message"
             placeholder="Write your Message"
+            required
+            minLength={10}
           />
           <ValidationError
             prefix="Message"
             field="message"
             errors={state.errors}
+            className="errorMessage"
           />
           <button
             type="submit"
@@ -119,7 +144,7 @@ const ContactUs = () => {
           >
             Send message
           </button>
-          <ValidationError errors={state.errors} />
+          <ValidationError errors={state.errors} className="errorMessage" />
         </form>
         <div className="contactBox">
           <div className="addressBox">
@@ -140,16 +165,6 @@ const ContactUs = () => {
           <p>
             <a href="tel:917972379031">
               <FaPhoneAlt className="contactIcon" />
-              <span className="spacing">+91 79723 79031 </span>
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://api.whatsapp.com/send?phone=917972379031"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaWhatsapp className="contactIcon" />
               <span className="spacing">+91 79723 79031 </span>
             </a>
           </p>

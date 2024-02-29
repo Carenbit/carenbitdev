@@ -122,7 +122,7 @@ p {
 
 @media only screen and (min-device-width: 1024px) {
   #homePage {
-    padding-top: 15%;
+    padding-top: 10%;
   }
   .plmImage {
     padding-left: 20%;
