@@ -7,10 +7,9 @@
 # Ignore JSON files within the React folder
 /package-lock.json
 /package.json
-
-# testing
-/coverage
 *.json
+# testing
+
 
 # production
 /build
