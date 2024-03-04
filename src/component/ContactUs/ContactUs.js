@@ -1,5 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {} from "react-google-recaptcha-v3";
 import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import {
   FaPhoneAlt,
@@ -13,9 +15,14 @@ import { motion } from "framer-motion";
 import carenbit from "../../assets/carenbit.png";
 
 const ContactUs = () => {
-  const [state, handleSubmit] = useForm("xzbnrgyp");
+  // const [state, handleSubmit] = useForm("xzbnrgyp");
+
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+  const [state, handleSubmit] = useForm("xdojgvqp", {
+    data: { "g-recaptcha-response": executeRecaptcha },
+  });
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -31,8 +38,25 @@ const ContactUs = () => {
       }, 3000);
       return;
     }
-    handleSubmit(event);
+    handleReCaptchaVerify(event);
   };
+
+  const handleReCaptchaVerify = React.useCallback(
+    (e) => {
+      e.preventDefault();
+      if (!executeRecaptcha) {
+        console.log("Execute recaptcha not yet available");
+        return;
+      }
+      console.log("execute recaptcha is", executeRecaptcha);
+      executeRecaptcha("enquiryFormSubmit").then((gReCaptchaToken) => {
+        console.log(gReCaptchaToken, "response Google reCaptcha server");
+        console.log(e);
+      });
+      handleSubmit(e);
+    },
+    [executeRecaptcha, handleSubmit]
+  );
 
   React.useEffect(() => {
     if (state.succeeded) {
@@ -144,6 +168,7 @@ const ContactUs = () => {
           >
             Send message
           </button>
+
           <ValidationError errors={state.errors} className="errorMessage" />
         </form>
         <div className="contactBox">
