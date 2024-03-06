@@ -13,10 +13,11 @@ import { MdEmail } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import carenbit from "../../assets/carenbit.png";
+import contactBG from "../../assets/contactBG.png";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
   // const [state, handleSubmit] = useForm("xzbnrgyp");
-
+  const { innerwidth } = props;
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
@@ -104,73 +105,85 @@ const ContactUs = () => {
         </>
       )}
 
-      <h1 className="text-center contactHeading">Contact Us</h1>
+      <h1 className="text-center contactHeading">Get in Touch</h1>
       <div className="contactBlock">
-        <form
-          onSubmit={handleFormSubmit}
-          className="contactForm"
-          id="contactForm"
-        >
-          <label htmlFor="name" className="form-label">
-            Name
-          </label>
-          <input
-            id="name"
-            type="name"
-            name="name"
-            autoComplete="Given name"
-            placeholder="Enter Full Name"
-            minLength={3}
-            maxLength={50}
-          />
-          <ValidationError
-            prefix="Name"
-            field="name"
-            errors={state.errors}
-            className="errorMessage"
-          />
-          <label htmlFor="email" className="form-label">
-            Email
-          </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            autoComplete="email"
-            placeholder="Enter Email Address"
-          />
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-            className="errorMessage"
-          />
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your Message"
-            required
-            minLength={10}
-          />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-            className="errorMessage"
-          />
-          <button
-            type="submit"
-            disabled={state.submitting}
-            className="mx-auto contactButton"
+        <div className="d-flex justify-content-evenly">
+          <form
+            onSubmit={handleFormSubmit}
+            className="contactForm"
+            id="contactForm"
           >
-            Send message
-          </button>
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              id="name"
+              type="name"
+              name="name"
+              autoComplete="Given name"
+              placeholder="Enter Full Name"
+              minLength={3}
+              maxLength={50}
+            />
+            <ValidationError
+              prefix="Name"
+              field="name"
+              errors={state.errors}
+              className="errorMessage"
+            />
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              autoComplete="email"
+              placeholder="Enter Email Address"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+              className="errorMessage"
+            />
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your Message"
+              required
+              minLength={10}
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+              className="errorMessage"
+            />
+            <button
+              type="submit"
+              disabled={state.submitting}
+              className="mx-auto contactButton"
+            >
+              Send message
+            </button>
 
-          <ValidationError errors={state.errors} className="errorMessage" />
-        </form>
+            <ValidationError errors={state.errors} className="errorMessage" />
+          </form>
+          {innerwidth > 1024 && (
+            <div className="contactImage">
+              <p>
+                Ready to streamline your processes and elevate innovation? Reach
+                out to us now and let's take your product lifecycle management
+                to new heights."
+              </p>
+              <img src={contactBG} alt="contactImage" className="img-fluid" />
+            </div>
+          )}
+        </div>
         <div className="contactBox">
           <div className="addressBox">
             <a
@@ -178,14 +191,16 @@ const ContactUs = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLocationDot className="contactIcon location" />
+              <div className="d-flex flex-row gap-3 ">
+                <FaLocationDot className="contactIcon location" />
+                <div className="address">
+                  <span>Dhruv Darshan Co-op. Soc</span>
+                  <span> Sector.No-26 </span>
+                  <span>Nigdi Pradhikaran </span>Ravet, Tal - Haveli
+                  <span> Pune 411044</span>
+                </div>
+              </div>
             </a>
-            <div className="address">
-              <span>Dhruv Darshan Co-op. Soc</span>
-              <span> Sector.No-26 </span>
-              <span>Nigdi Pradhikaran </span>Ravet, Tal - Haveli
-              <span> Pune 411044</span>
-            </div>
           </div>
           <p>
             <a href="tel:917972379031">

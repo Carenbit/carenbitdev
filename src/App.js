@@ -68,7 +68,7 @@ const App = () => {
           <Solutions />
         </div>
         <div id="contact-us">
-          <ContactUs />
+          <ContactUs innerwidth={width} />
         </div>
         {isVisible && (
           <div className="scrollTop">
