@@ -1,3 +1,7 @@
+#productsPage {
+  padding: 5% 0;
+}
+
 .placeHolderImage {
   width: 75%;
   height: 55%;
@@ -38,6 +42,9 @@
 }
 
 @media screen and (max-width: 464px) {
+  #productsPage {
+    padding-top: 20%;
+  }
   .productCard {
     width: 80%;
     margin: 5% 10%;
@@ -48,6 +55,12 @@
   }
   .pNames {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #productsPage {
+    padding-top: 12%;
   }
 }
 

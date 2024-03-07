@@ -36,13 +36,12 @@
   align-items: center;
   gap: 70px;
 }
-@media only screen and (max-width:1024px) {
-  .horizontal-container{
+@media only screen and (max-width: 1024px) {
+  .horizontal-container {
     flex-wrap: wrap;
     gap: 50px;
     row-gap: 100px;
   }
-  
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 464px) {
   .horizontal-container {
