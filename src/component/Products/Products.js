@@ -6,7 +6,7 @@ import productImg4 from "../../assets/ProductImg4.png";
 
 const Products = () => {
   return (
-    <div>
+    <div id="productsPage">
       <h1 className="text-center pHeading">Our Products</h1>
       <div className="d-flex flex-wrap pContainer">
         <div className="d-flex flex-column p-3 productCard align-items-center">
