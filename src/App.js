@@ -42,7 +42,7 @@ const App = () => {
 
   return (
     <GoogleReCaptchaProvider
-      reCaptchaKey="6Ld0tokpAAAAAEHVaDoLyEcCrXPOqUj7vUCfTF9x"
+      reCaptchaKey={process.env.REACT_APP_SITE_KEY}
       scriptProps={{
         async: false,
         defer: false,
