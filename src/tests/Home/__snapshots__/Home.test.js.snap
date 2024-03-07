@@ -6,13 +6,15 @@ exports[`should match screenshot of Home component 1`] = `
     id="homePage"
   >
     <h1
-      class="mainHeading"
+      class="mainHeading grid-item"
     >
       Simplify Your Product Journey with Carenbit
     </h1>
-    <div>
+    <div
+      class="grid-item"
+    >
       <p
-        class="subTitle"
+        class="subTitle "
       >
         Explore Carenbit's PLM Solutions for Enhanced Product Lifecycle Management.
       </p>
@@ -23,7 +25,7 @@ exports[`should match screenshot of Home component 1`] = `
       >
         <button>
           <svg
-            class="mailIcon"
+            class="mailIcon m-1"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -46,7 +48,7 @@ exports[`should match screenshot of Home component 1`] = `
     </div>
     <img
       alt="..."
-      class="plmImage img-fluid"
+      class="plmImage img-fluid grid-item"
       src="frameHome.png"
     />
   </div>
