@@ -16,12 +16,12 @@ import carenbit from "../../assets/carenbit.png";
 import contactBG from "../../assets/contactBG.png";
 
 const ContactUs = (props) => {
-  // const [state, handleSubmit] = useForm("xzbnrgyp");
+  const [state, handleSubmit] = useForm("xzbnrgyp");
   const { innerwidth } = props;
   const [success, setSuccess] = React.useState(false);
   const [error, setError] = React.useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
-  const [state, handleSubmit] = useForm("xdojgvqp", {
+  //const [state, handleSubmit] = useForm("xdojgvqp", {
     data: { "g-recaptcha-response": executeRecaptcha },
   });
 
