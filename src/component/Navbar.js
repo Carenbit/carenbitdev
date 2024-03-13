@@ -82,33 +82,51 @@ export default function Navbar() {
                 ></img>
               </button>
             </li>
-            <li>
-              <a className="side-link" href="#home">
+            <li >
+              <a className="side-link" href="#home" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 Home
               </a>
             </li>
             <li>
-              <a className="side-link" href="#about-us">
+              <a className="side-link" href="#about-us" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 About Us
               </a>
             </li>
             <li>
-              <a className="side-link" href="#services">
+              <a className="side-link" href="#services" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 Services
               </a>
             </li>
             <li>
-              <a className="side-link" href="#products">
+              <a className="side-link" href="#products" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 Products
               </a>
             </li>
             <li>
-              <a className="side-link" href="#solutions">
+              <a className="side-link" href="#solutions" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 Solutions
               </a>
             </li>
             <li>
-              <a className="side-link" href="#contact-us">
+              <a className="side-link" href="#contact-us" onClick={function () {
+                  const sidebar = document.querySelector(".side-bar");
+                  sidebar.style.display = "none";
+                }}>
                 Contact Us
               </a>
             </li>

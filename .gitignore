@@ -4,9 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
-
+# Ignore JSON files within the React folder
+/package-lock.json
+/package.json
+*.json
 # testing
-/coverage
+
 
 # production
 /build
