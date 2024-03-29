@@ -3,7 +3,7 @@ name: Deploy Carenbit
 on:
   push:
     branches:
-      - master
+      - deployment
 
 jobs:
   deploy:
