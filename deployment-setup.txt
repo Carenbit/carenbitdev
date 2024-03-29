@@ -1,0 +1,12 @@
+1. Create Droplet on Digital Ocean(create ssh key).
+2. Login to Droplet.
+3. Create non-root user and login to the same.
+4. Install Node.js(Installed Node.js using nvm)(refernce link- https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04).
+5. Check node version insatlled.
+6. Install nginx server.(refernce link- https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04).
+7. Check nginx server from droplet ip, it will display nginx server homepage.
+8. CI/CD setup for github actions:
+    - Add YML file.
+    -Configure runner.
+9.
+    
