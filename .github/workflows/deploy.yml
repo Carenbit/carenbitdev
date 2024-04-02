@@ -20,4 +20,4 @@ jobs:
         run: npm run build
 
       - name: test
-        run: echo "working"
+        run: echo "working runner..."
