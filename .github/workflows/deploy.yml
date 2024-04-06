@@ -3,11 +3,9 @@ name: Deploy Reactjs site to droplet
 on:
   push:
     branches: ci-cd-droplet
-  pull_request:
-    branches: ci-cd-droplet
 
 jobs:
-  build:
+  deploy:
     runs-on: self-hosted
     steps:
       - name: Checkout
