@@ -17,17 +17,17 @@ jobs:
       #     node-version: "16"
       #     cache: npm
 
-      - name: Debug Port 3000 Usage
-        run: |
-          PORT_IN_USE=$(lsof -i tcp:3000 -t)
-          if [ -z "$PORT_IN_USE" ]; then
-              echo "No process is using port 3000"
-          else
-              echo "Process using port 3000: $PORT_IN_USE"
-              echo "Killing process $PORT_IN_USE"
-              kill -9 "$PORT_IN_USE"
-              echo "Process killed"
-          fi
+      # - name: Debug Port 3000 Usage
+      #   run: |
+      #     PORT_IN_USE=$(lsof -i tcp:3000 -t)
+      #     if [ -z "$PORT_IN_USE" ]; then
+      #         echo "No process is using port 3000"
+      #     else
+      #         echo "Process using port 3000: $PORT_IN_USE"
+      #         echo "Killing process $PORT_IN_USE"
+      #         kill -9 "$PORT_IN_USE"
+      #         echo "Process killed"
+      #     fi
 
       # Delete package-lock.json and node_modules
       - name: Clean Up
