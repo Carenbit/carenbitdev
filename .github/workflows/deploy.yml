@@ -5,38 +5,54 @@ on:
     branches: ci-cd-droplet
 
 jobs:
-  deploy:
-    runs-on: self-hosted
+  build:
+    runs-on:  self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20"
-          cache: npm
-
-      # - name: Debug Port 3000 Usage
-      #   run: |
-      #     PORT_IN_USE=$(lsof -i tcp:3000 -t)
-      #     if [ -z "$PORT_IN_USE" ]; then
-      #         echo "No process is using port 3000"
-      #     else
-      #         echo "Process using port 3000: $PORT_IN_USE"
-      #         echo "Killing process $PORT_IN_USE"
-      #         kill -9 "$PORT_IN_USE"
-      #         echo "Process killed"
-      #     fi
-
-      # Delete package-lock.json and node_modules
-      - name: Clean Up
-        run: |
-          rm -rf package-lock.json node_modules
-
-      - name: Install dependencies
+          node-version: 20
+          
+      - name: Install Dependencies
         run: npm install --force
+
       - name: Build Project
         run: npm run build
-      - name: Start server
-        run: sudo npm run start &
+  # deploy:
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+
+  #     - name: Setup Node
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "20"
+  #         cache: npm
+
+  #     # - name: Debug Port 3000 Usage
+  #     #   run: |
+  #     #     PORT_IN_USE=$(lsof -i tcp:3000 -t)
+  #     #     if [ -z "$PORT_IN_USE" ]; then
+  #     #         echo "No process is using port 3000"
+  #     #     else
+  #     #         echo "Process using port 3000: $PORT_IN_USE"
+  #     #         echo "Killing process $PORT_IN_USE"
+  #     #         kill -9 "$PORT_IN_USE"
+  #     #         echo "Process killed"
+  #     #     fi
+
+  #     # Delete package-lock.json and node_modules
+  #     - name: Clean Up
+  #       run: |
+  #         rm -rf package-lock.json node_modules
+
+  #     - name: Install dependencies
+  #       run: npm install --force
+  #     - name: Build Project
+  #       run: npm run build
+  #     - name: Start server
+  #       run: sudo npm run start &
