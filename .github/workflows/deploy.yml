@@ -3,7 +3,7 @@ name: Deploy Carenbit
 on:
   push:
     branches:
-      - deployment
+      - ci-cd-droplet
 
 jobs:
   deploy:
