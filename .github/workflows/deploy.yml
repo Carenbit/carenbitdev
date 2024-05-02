@@ -1,68 +1,26 @@
-name: Deploy Reactjs site to droplet
+name: Deploy Carenbit
 
 on:
   push:
-    branches: ci-cd-droplet
+    branches:
+      - deployment
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout files    
-        uses: actions/checkout@v2
-        
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 20
-          
-      - name: Install Dependencies
-        run: npm i
-        
-      - name: Build Project
-        run: npm run build
-        
   deploy:
-    needs: build
-    runs-on:  self-hosted
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: Checkout files    
-        uses: actions/checkout@v2
-      
-
-     
-  # deploy:
-  #   runs-on: self-hosted
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v2
-
-  #     - name: Setup Node
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: "20"
-  #         cache: npm
-
-  #     # - name: Debug Port 3000 Usage
-  #     #   run: |
-  #     #     PORT_IN_USE=$(lsof -i tcp:3000 -t)
-  #     #     if [ -z "$PORT_IN_USE" ]; then
-  #     #         echo "No process is using port 3000"
-  #     #     else
-  #     #         echo "Process using port 3000: $PORT_IN_USE"
-  #     #         echo "Killing process $PORT_IN_USE"
-  #     #         kill -9 "$PORT_IN_USE"
-  #     #         echo "Process killed"
-  #     #     fi
-
-  #     # Delete package-lock.json and node_modules
-  #     - name: Clean Up
-  #       run: |
-  #         rm -rf package-lock.json node_modules
-
-  #     - name: Install dependencies
-  #       run: npm install --force
-  #     - name: Build Project
-  #       run: npm run build
-  #     - name: Start server
-  #       run: sudo npm run start &
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm i
+      - run: npm run build
+      - run: npm test
