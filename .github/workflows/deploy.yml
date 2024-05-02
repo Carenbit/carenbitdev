@@ -5,15 +5,14 @@ on:
     branches: ci-cd-droplet
 
 jobs:
-  deploy:
-    runs-on:  self-hosted
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-  
-
+      - name: Checkout files    
+        uses: actions/checkout@v2
+        
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: 20
           
@@ -22,6 +21,16 @@ jobs:
         
       - name: Build Project
         run: npm run build
+        
+  deploy:
+    needs: build
+    runs-on:  self-hosted
+    steps:
+      - name: Checkout files    
+        uses: actions/checkout@v2
+      
+
+     
   # deploy:
   #   runs-on: self-hosted
   #   steps:
